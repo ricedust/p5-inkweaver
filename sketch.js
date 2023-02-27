@@ -16,6 +16,7 @@ let isWrappingParticles = true;
 
 let strokeOpacity = 20;
 let strokeColor = 0;
+let isFading = false;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -32,6 +33,8 @@ function setup() {
 function draw() {
   strokeWeight(1);
   stroke(strokeColor, strokeOpacity);
+
+  isFading && background(255, 5);
   
   xOffset = 0;
   for (let x = 0; x < columns; x++) {
@@ -98,6 +101,8 @@ function keyPressed() {
     case 67: toggleEraser(); break;
     // Z to toggle whether particles wrap back around
     case 90: toggleParticleWrapping(); break;
+    // F to toggle trail fading
+    case 70: toggleFading(); break;
     // arrow keys set flowfield direction
     case 37: offsetFlowFieldAngle(0); break; // left
     case 38: offsetFlowFieldAngle(HALF_PI); break; // up
@@ -117,11 +122,13 @@ function resetBrushes() {
   snSetOpacity(20);
   strokeColor = 0;
   isWrappingParticles = true;
+  isFading = false;
   flowFieldAngleOffset = 0;
   
 }
 function toggleEraser() { strokeColor = strokeColor == 0 ? 255 : 0; }
 function toggleParticleWrapping() { isWrappingParticles = !isWrappingParticles; }
+function toggleFading() { isFading = !isFading; }
 function offsetFlowFieldAngle(offsetAngle) { flowFieldAngleOffset = offsetAngle; }
 
 // ===============================================
