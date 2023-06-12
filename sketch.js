@@ -27,6 +27,15 @@ function setup() {
 }
 
 // ===============================================
+// WINDOW RESIZING
+// ===============================================
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  background(255);
+}
+
+// ===============================================
 // FLOWFIELD AND PARTICLE
 // ===============================================
 
@@ -34,7 +43,7 @@ function draw() {
   strokeWeight(1);
   stroke(strokeColor, strokeOpacity);
 
-  isFading && background(255, 5);
+  if (isFading) background(255, 5);
   
   xOffset = 0;
   for (let x = 0; x < columns; x++) {
