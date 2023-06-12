@@ -6,8 +6,6 @@ Inkweaver is a generative art tool for creating spontaneous line art. By adjusti
 
 ## How To Use
 
-### [Click here to start drawing in your browser.](http://ricedust.com/p5-inkweaver/)
-
 Use the mouse to draw on the canvas. Create up to 27 unique brushes by combining multiple line settings.
 
 | Hotkey | Function |
@@ -21,6 +19,8 @@ Use the mouse to draw on the canvas. Create up to 27 unique brushes by combining
 | F	| Toggle line fading |
 | C	| Toggle line eraser |
 | R	| Reset Settings |
+
+### [Click here to start drawing in your browser.](http://ricedust.com/p5-inkweaver/)
 
 ## How It Works
 
