@@ -2,7 +2,7 @@
 
 ![image](https://github.com/ricedust/p5-inkweaver/assets/62413269/e94055cc-40a4-4177-8ef4-15a8419cc1a0)
 
-Inkweaver is a generative art tool for creating spontaneous line art. By adjusting the brush properties, you can create anything from methodical, textured doodles to freeflowing, sporadic lineography. You can find examples in the [gallery](#gallery).
+Inkweaver is a generative art tool for creating spontaneous line art. By adjusting the brush properties, you can create anything from methodical, textured doodles to freeflowing, sporadic lineography. You can find examples in the [gallery](#gallery) below.
 
 ## How To Use
 
